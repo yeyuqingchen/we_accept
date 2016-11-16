@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/background_dark">
+        <ProgressBar
+            android:id="@+id/refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="位置"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+
+        <ImageView
+            android:id="@+id/see"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@mipmap/hear"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.yc.we_accept.My3dMapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.yc.we_accept.My3dMapView>
+</LinearLayout>
